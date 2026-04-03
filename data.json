@@ -1,0 +1,117 @@
+{
+  "profile": {
+    "name": "Gam Ho",
+    "firstName": "Gam",
+    "lastName": "Ho",
+    "tagline": "Senior Talent Acquisition Executive | Global Hiring",
+    "location": "Da Nang City, Vietnam",
+    "avatar": "gamho.jpeg",
+    "email": "gam.ho@gradion.com",
+    "phone": "+84 383 791 675",
+    "linkedin": "https://www.linkedin.com/in/gamho/",
+    "facebook": "https://www.facebook.com/gamho97"
+  },
+  "about": {
+    "paragraphs": [
+      "I'm a Senior Talent Acquisition Executive at <a href=\"https://gradion.com/\" target=\"_blank\" rel=\"noopener\" class=\"inline-link\">Gradion</a> (formerly NFQ Asia), specializing in sourcing and securing top-tier professionals across tech and non-tech roles. I craft tailored recruitment strategies that attract the brightest minds in the industry.",
+      "With a hospitality management background, I bring a unique blend of professionalism and empathy to candidate engagement. My approach is data-driven and results-oriented, focusing on optimizing the recruitment lifecycle from initial outreach to successful onboarding.",
+      "I help shape <a href=\"https://gradion.com/\" target=\"_blank\" rel=\"noopener\" class=\"inline-link\">Gradion</a> as an employer of choice and a hub for innovation — aligning the right people with the right opportunities across Asia, DACH, and MENA regions."
+    ],
+    "highlights": [
+      { "number": "5+", "label": "Years in Recruitment" },
+      { "number": "IT", "label": "Recruitment Focus" },
+      { "number": "3", "label": "Regions Covered" },
+      { "number": "14", "label": "Certifications" }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Senior Talent Acquisition Executive",
+      "company": "Gradion",
+      "companyUrl": "https://gradion.com/",
+      "location": "Da Nang City, Vietnam",
+      "date": "Jan 2026 — Present",
+      "current": true,
+      "description": "Leading strategic talent acquisition initiatives across tech and non-tech domains. Driving recruitment excellence as part of Gradion's continued evolution from NFQ Asia."
+    },
+    {
+      "role": "Talent Acquisition Executive",
+      "company": "Gradion",
+      "companyUrl": "https://gradion.com/",
+      "location": "Da Nang City, Vietnam",
+      "date": "Jun 2025 — Dec 2025",
+      "current": false,
+      "description": "Continued recruitment operations during Gradion's rebrand from NFQ Asia. The company brings 23+ years of experience delivering technology solutions, now focused on scaling businesses through digital, deep tech & AI."
+    },
+    {
+      "role": "Talent Acquisition Executive",
+      "company": "NFQ Asia",
+      "companyUrl": null,
+      "location": "Da Nang City, Vietnam",
+      "date": "Mar 2021 — Jun 2025",
+      "current": false,
+      "description": "Managed the full recruitment lifecycle for IT and non-tech positions. Developed sourcing strategies, conducted market research, and delivered top talent to support company growth across Asia, DACH, and MENA regions."
+    },
+    {
+      "role": "Human Resources Intern",
+      "company": "NFQ Asia",
+      "companyUrl": null,
+      "location": "Da Nang City, Vietnam",
+      "date": "Sep 2020 — Feb 2021",
+      "current": false,
+      "description": "Gained foundational experience in IT recruitment and HR operations, supporting the talent acquisition team in sourcing and screening candidates."
+    },
+    {
+      "role": "Guest Service Agent",
+      "company": "Hilton Da Nang",
+      "companyUrl": null,
+      "location": "Da Nang City, Vietnam",
+      "date": "Mar 2019 — Aug 2020",
+      "current": false,
+      "description": "Delivered exceptional guest experiences at an international 5-star property. Built strong communication and interpersonal skills that later proved invaluable in recruitment and candidate engagement."
+    }
+  ],
+  "skills": {
+    "featured": ["Data-Driven Recruitment", "Process Improvement", "Market Research"],
+    "other": ["IT Recruitment", "Full-Cycle Recruiting", "Talent Sourcing", "Candidate Engagement", "Employer Branding", "Stakeholder Management", "Onboarding", "Recruitment Strategy", "Agile Project Management", "AI in HR"]
+  },
+  "certifications": [
+    { "name": "Google Project Management", "issuer": "Google", "icon": "G" },
+    { "name": "Google AI Essentials", "issuer": "Google", "icon": "G" },
+    { "name": "Accelerate Your Job Search with AI", "issuer": "Google", "icon": "G" },
+    { "name": "Capstone: Applying Project Management in the Real World", "issuer": "Google", "icon": "G" },
+    { "name": "Project Execution: Running the Project", "issuer": "Google", "icon": "G" },
+    { "name": "Project Planning: Putting It All Together", "issuer": "Google", "icon": "G" },
+    { "name": "Project Initiation: Starting a Successful Project", "issuer": "Google", "icon": "G" },
+    { "name": "Foundations of Project Management", "issuer": "Google", "icon": "G" },
+    { "name": "Agile Project Management", "issuer": "Google", "icon": "G" },
+    { "name": "Generative AI for HR Professionals", "issuer": "Fractal Analytics", "icon": "FA" },
+    { "name": "Introduction to Generative AI in Human Resources", "issuer": "Coursera Instructor Network", "icon": "C" },
+    { "name": "AI for Professional Communication", "issuer": "Kennesaw State University", "icon": "KS" },
+    { "name": "Generative AI for Everyone", "issuer": "DeepLearning.AI", "icon": "DL" },
+    { "name": "Voice of Change: Communicate with Teams for GenAI Adoption", "issuer": "Microsoft", "icon": "MS" }
+  ],
+  "education": [
+    {
+      "school": "Da Nang University of Economic",
+      "degree": "Bachelor's Degree — Hospitality Management",
+      "year": "2015 — 2019"
+    }
+  ],
+  "languages": [
+    { "name": "English", "level": "Professional Working Proficiency", "percent": 80 },
+    { "name": "Vietnamese", "level": "Native", "percent": 100 },
+    { "name": "Chinese", "level": "Elementary Proficiency", "percent": 30 }
+  ],
+  "openPositions": [
+    {
+      "title": "Senior Fullstack Developer",
+      "company": "Gradion",
+      "location": "HCM, Da Nang, Hanoi, Bangkok",
+      "type": "Full-time",
+      "setup": "Hybrid / Remote",
+      "url": "https://www.linkedin.com/jobs/view/4377574299/",
+      "tags": ["Fullstack", "Senior", "Hybrid/Remote"]
+    }
+  ]
+}

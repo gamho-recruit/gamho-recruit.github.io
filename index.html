@@ -666,7 +666,7 @@
                         <div class="job-card-header">
                             <div>
                                 <p class="job-title">${j.title}</p>
-                                <p class="job-meta">${j.company} &middot; ${j.location}</p>
+                                <p class="job-meta">${j.company} &middot; ${j.location}${j.setup ? ` &middot; ${j.setup}` : ''}</p>
                             </div>
                             <span class="job-type">${j.type}</span>
                         </div>
