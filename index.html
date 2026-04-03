@@ -27,9 +27,7 @@
             --max-width: 960px;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: var(--font);
@@ -37,6 +35,14 @@
             background: var(--white);
             line-height: 1.6;
         }
+
+        .inline-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .inline-link:hover { text-decoration: underline; }
 
         /* NAV */
         nav {
@@ -71,10 +77,7 @@
             transition: color 0.2s;
         }
 
-        nav a:hover,
-        nav a:focus {
-            color: var(--primary);
-        }
+        nav a:hover, nav a:focus { color: var(--primary); }
 
         nav .nav-name {
             color: var(--primary);
@@ -92,10 +95,7 @@
             text-align: center;
         }
 
-        .hero-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
+        .hero-inner { max-width: var(--max-width); margin: 0 auto; }
 
         .avatar {
             width: 160px;
@@ -113,9 +113,7 @@
             letter-spacing: -0.5px;
         }
 
-        .hero h1 span {
-            color: var(--primary);
-        }
+        .hero h1 span { color: var(--primary); }
 
         .hero .tagline {
             font-size: 1.15rem;
@@ -154,36 +152,15 @@
             transition: all 0.2s;
         }
 
-        .btn-primary {
-            background: var(--primary);
-            color: var(--white);
-        }
+        .btn-primary { background: var(--primary); color: var(--white); }
+        .btn-primary:hover { background: var(--primary-light); transform: translateY(-1px); }
 
-        .btn-primary:hover {
-            background: var(--primary-light);
-            transform: translateY(-1px);
-        }
-
-        .btn-outline {
-            border: 2px solid var(--gray-600);
-            color: var(--white);
-            background: transparent;
-        }
-
-        .btn-outline:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
+        .btn-outline { border: 2px solid var(--gray-600); color: var(--white); background: transparent; }
+        .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
 
         /* SECTIONS */
-        section {
-            padding: 80px 24px;
-        }
-
-        .section-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
+        section { padding: 80px 24px; }
+        .section-inner { max-width: var(--max-width); margin: 0 auto; }
 
         .section-title {
             font-size: 1.8rem;
@@ -192,9 +169,7 @@
             color: var(--secondary);
         }
 
-        .section-title span {
-            color: var(--primary);
-        }
+        .section-title span { color: var(--primary); }
 
         .section-subtitle {
             color: var(--gray-600);
@@ -202,9 +177,7 @@
             margin-bottom: 40px;
         }
 
-        .alt-bg {
-            background: var(--gray-50);
-        }
+        .alt-bg { background: var(--gray-50); }
 
         /* ABOUT */
         .about-grid {
@@ -214,15 +187,8 @@
             align-items: start;
         }
 
-        .about-text {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--gray-800);
-        }
-
-        .about-text p + p {
-            margin-top: 16px;
-        }
+        .about-text { font-size: 1rem; line-height: 1.8; color: var(--gray-800); }
+        .about-text p + p { margin-top: 16px; }
 
         .about-highlights {
             display: grid;
@@ -254,10 +220,7 @@
         }
 
         /* EXPERIENCE */
-        .timeline {
-            position: relative;
-            padding-left: 32px;
-        }
+        .timeline { position: relative; padding-left: 32px; }
 
         .timeline::before {
             content: '';
@@ -269,14 +232,8 @@
             background: var(--gray-200);
         }
 
-        .timeline-item {
-            position: relative;
-            margin-bottom: 40px;
-        }
-
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
+        .timeline-item { position: relative; margin-bottom: 40px; }
+        .timeline-item:last-child { margin-bottom: 0; }
 
         .timeline-item::before {
             content: '';
@@ -304,36 +261,13 @@
             margin-bottom: 4px;
         }
 
-        .timeline-role {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--secondary);
-        }
-
-        .timeline-date {
-            font-size: 0.85rem;
-            color: var(--primary);
-            font-weight: 600;
-        }
-
-        .timeline-company {
-            font-size: 0.95rem;
-            color: var(--gray-600);
-            margin-bottom: 8px;
-        }
-
-        .timeline-desc {
-            font-size: 0.9rem;
-            color: var(--gray-600);
-            line-height: 1.7;
-        }
+        .timeline-role { font-size: 1.1rem; font-weight: 700; color: var(--secondary); }
+        .timeline-date { font-size: 0.85rem; color: var(--primary); font-weight: 600; }
+        .timeline-company { font-size: 0.95rem; color: var(--gray-600); margin-bottom: 8px; }
+        .timeline-desc { font-size: 0.9rem; color: var(--gray-600); line-height: 1.7; }
 
         /* SKILLS */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
+        .skills-container { display: flex; flex-wrap: wrap; gap: 12px; }
 
         .skill-tag {
             background: var(--secondary);
@@ -344,9 +278,106 @@
             font-weight: 500;
         }
 
-        .skill-tag.featured {
-            background: var(--primary);
+        .skill-tag.featured { background: var(--primary); }
+
+        /* OPEN POSITIONS */
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
         }
+
+        .job-card {
+            background: var(--white);
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            padding: 28px;
+            transition: border-color 0.2s, transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .job-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .job-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .job-type {
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--primary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .job-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+
+        .job-meta {
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            margin-bottom: 16px;
+        }
+
+        .job-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .job-tag {
+            background: var(--gray-100);
+            color: var(--gray-800);
+            font-size: 0.78rem;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-weight: 500;
+        }
+
+        .job-apply {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .job-apply:hover { background: var(--primary-light); }
+
+        .job-apply svg { width: 14px; height: 14px; fill: currentColor; }
+
+        .no-jobs {
+            text-align: center;
+            padding: 48px 24px;
+            color: var(--gray-600);
+        }
+
+        .no-jobs p { font-size: 1rem; margin-bottom: 8px; }
+        .no-jobs .subtle { font-size: 0.85rem; color: var(--gray-400); }
 
         /* CERTIFICATIONS */
         .cert-grid {
@@ -363,10 +394,7 @@
             transition: border-color 0.2s, transform 0.2s;
         }
 
-        .cert-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-2px);
-        }
+        .cert-card:hover { border-color: var(--primary); transform: translateY(-2px); }
 
         .cert-icon {
             width: 40px;
@@ -382,17 +410,8 @@
             margin-bottom: 12px;
         }
 
-        .cert-name {
-            font-weight: 700;
-            font-size: 0.95rem;
-            color: var(--secondary);
-        }
-
-        .cert-issuer {
-            font-size: 0.82rem;
-            color: var(--gray-600);
-            margin-top: 4px;
-        }
+        .cert-name { font-weight: 700; font-size: 0.95rem; color: var(--secondary); }
+        .cert-issuer { font-size: 0.82rem; color: var(--gray-600); margin-top: 4px; }
 
         /* EDUCATION & LANGUAGES */
         .edu-lang-grid {
@@ -408,30 +427,11 @@
             padding: 32px;
         }
 
-        .edu-card h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--secondary);
-            margin-bottom: 4px;
-        }
+        .edu-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--secondary); margin-bottom: 4px; }
+        .edu-card .degree { color: var(--primary); font-weight: 600; font-size: 0.95rem; }
+        .edu-card .year { color: var(--gray-600); font-size: 0.85rem; margin-top: 4px; }
 
-        .edu-card .degree {
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        .edu-card .year {
-            color: var(--gray-600);
-            font-size: 0.85rem;
-            margin-top: 4px;
-        }
-
-        .lang-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+        .lang-list { display: flex; flex-direction: column; gap: 20px; }
 
         .lang-item {
             background: var(--white);
@@ -440,41 +440,15 @@
             padding: 20px 24px;
         }
 
-        .lang-name {
-            font-weight: 700;
-            color: var(--secondary);
-            margin-bottom: 8px;
-        }
+        .lang-name { font-weight: 700; color: var(--secondary); margin-bottom: 8px; }
 
-        .lang-bar {
-            height: 6px;
-            background: var(--gray-200);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-
-        .lang-bar-fill {
-            height: 100%;
-            background: var(--primary);
-            border-radius: 3px;
-        }
-
-        .lang-level {
-            font-size: 0.8rem;
-            color: var(--gray-600);
-            margin-top: 6px;
-        }
+        .lang-bar { height: 6px; background: var(--gray-200); border-radius: 3px; overflow: hidden; }
+        .lang-bar-fill { height: 100%; background: var(--primary); border-radius: 3px; }
+        .lang-level { font-size: 0.8rem; color: var(--gray-600); margin-top: 6px; }
 
         /* CONTACT / FOOTER */
-        .contact {
-            background: var(--secondary);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .contact .section-title {
-            color: var(--white);
-        }
+        .contact { background: var(--secondary); color: var(--white); text-align: center; }
+        .contact .section-title { color: var(--white); }
 
         .contact-text {
             font-size: 1.05rem;
@@ -505,16 +479,8 @@
             transition: all 0.2s;
         }
 
-        .contact-link:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .contact-link svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
-        }
+        .contact-link:hover { border-color: var(--primary); color: var(--primary); }
+        .contact-link svg { width: 18px; height: 18px; fill: currentColor; }
 
         footer {
             text-align: center;
@@ -523,71 +489,27 @@
             border-top: 1px solid #1a1a1a;
         }
 
-        footer p {
-            font-size: 0.8rem;
-            color: var(--gray-600);
-        }
+        footer p { font-size: 0.8rem; color: var(--gray-600); }
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            nav ul {
-                gap: 20px;
-            }
-
-            .hero {
-                padding: 100px 24px 60px;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-
-            .edu-lang-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-
-            .timeline-header {
-                flex-direction: column;
-                gap: 2px;
-            }
-
-            section {
-                padding: 60px 20px;
-            }
-
-            .avatar {
-                width: 120px;
-                height: 120px;
-            }
+            nav ul { gap: 20px; }
+            .hero { padding: 100px 24px 60px; }
+            .hero h1 { font-size: 2rem; }
+            .about-grid { grid-template-columns: 1fr; gap: 32px; }
+            .edu-lang-grid { grid-template-columns: 1fr; gap: 32px; }
+            .timeline-header { flex-direction: column; gap: 2px; }
+            section { padding: 60px 20px; }
+            .avatar { width: 120px; height: 120px; }
         }
 
         @media (max-width: 480px) {
-            nav ul {
-                gap: 16px;
-            }
-
-            .hero h1 {
-                font-size: 1.7rem;
-            }
-
-            .about-highlights {
-                grid-template-columns: 1fr;
-            }
-
-            .cert-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
+            nav ul { gap: 16px; }
+            .hero h1 { font-size: 1.7rem; }
+            .about-highlights { grid-template-columns: 1fr; }
+            .cert-grid { grid-template-columns: 1fr; }
+            .jobs-grid { grid-template-columns: 1fr; }
+            .contact-links { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -599,8 +521,9 @@
             <li><a href="#hero" class="nav-name">Gam Ho</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#jobs">Jobs</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#certifications">Certs</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -609,14 +532,11 @@
     <!-- HERO -->
     <section class="hero" id="hero">
         <div class="hero-inner">
-            <img src="gamho.jpeg" alt="Gam Ho" class="avatar">
-            <h1>Gam <span>Ho</span></h1>
-            <p class="tagline">Senior Talent Acquisition Executive | Global Hiring</p>
-            <p class="location">Da Nang City, Vietnam</p>
-            <div class="hero-links">
-                <a href="mailto:gam.ho@gradion.com" class="btn btn-primary">Get in Touch</a>
-                <a href="https://www.linkedin.com/in/gamho/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn Profile</a>
-            </div>
+            <img src="gamho.jpeg" alt="Gam Ho" class="avatar" id="heroAvatar">
+            <h1 id="heroName"></h1>
+            <p class="tagline" id="heroTagline"></p>
+            <p class="location" id="heroLocation"></p>
+            <div class="hero-links" id="heroLinks"></div>
         </div>
     </section>
 
@@ -626,29 +546,8 @@
             <h2 class="section-title">About <span>Me</span></h2>
             <p class="section-subtitle">Connecting top talent with industry-leading opportunities</p>
             <div class="about-grid">
-                <div class="about-text">
-                    <p>I'm a Senior Talent Acquisition Executive at <a href="https://gradion.com/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; font-weight: 600;">Gradion</a> (formerly NFQ Asia), specializing in sourcing and securing top-tier professionals across tech and non-tech roles. I craft tailored recruitment strategies that attract the brightest minds in the industry.</p>
-                    <p>With a hospitality management background, I bring a unique blend of professionalism and empathy to candidate engagement. My approach is data-driven and results-oriented, focusing on optimizing the recruitment lifecycle from initial outreach to successful onboarding.</p>
-                    <p>I help shape <a href="https://gradion.com/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; font-weight: 600;">Gradion</a> as an employer of choice and a hub for innovation — aligning the right people with the right opportunities across Asia, DACH, and MENA regions.</p>
-                </div>
-                <div class="about-highlights">
-                    <div class="highlight-card">
-                        <span class="number">5+</span>
-                        <span class="label">Years in Recruitment</span>
-                    </div>
-                    <div class="highlight-card">
-                        <span class="number">IT</span>
-                        <span class="label">Recruitment Focus</span>
-                    </div>
-                    <div class="highlight-card">
-                        <span class="number">3</span>
-                        <span class="label">Regions Covered</span>
-                    </div>
-                    <div class="highlight-card">
-                        <span class="number">14</span>
-                        <span class="label">Certifications</span>
-                    </div>
-                </div>
+                <div class="about-text" id="aboutText"></div>
+                <div class="about-highlights" id="aboutHighlights"></div>
             </div>
         </div>
     </section>
@@ -658,196 +557,45 @@
         <div class="section-inner">
             <h2 class="section-title">Work <span>Experience</span></h2>
             <p class="section-subtitle">My professional journey in talent acquisition and beyond</p>
-            <div class="timeline">
+            <div class="timeline" id="timeline"></div>
+        </div>
+    </section>
 
-                <div class="timeline-item current">
-                    <div class="timeline-header">
-                        <span class="timeline-role">Senior Talent Acquisition Executive</span>
-                        <span class="timeline-date">Jan 2026 — Present</span>
-                    </div>
-                    <p class="timeline-company"><a href="https://gradion.com/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; font-weight: 600;">Gradion</a> &middot; Da Nang City, Vietnam</p>
-                    <p class="timeline-desc">Leading strategic talent acquisition initiatives across tech and non-tech domains. Driving recruitment excellence as part of Gradion's continued evolution from NFQ Asia.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <span class="timeline-role">Talent Acquisition Executive</span>
-                        <span class="timeline-date">Jun 2025 — Dec 2025</span>
-                    </div>
-                    <p class="timeline-company"><a href="https://gradion.com/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; font-weight: 600;">Gradion</a> &middot; Da Nang City, Vietnam</p>
-                    <p class="timeline-desc">Continued recruitment operations during Gradion's rebrand from NFQ Asia. The company brings 23+ years of experience delivering technology solutions, now focused on scaling businesses through digital, deep tech &amp; AI.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <span class="timeline-role">Talent Acquisition Executive</span>
-                        <span class="timeline-date">Mar 2021 — Jun 2025</span>
-                    </div>
-                    <p class="timeline-company">NFQ Asia &middot; Da Nang City, Vietnam</p>
-                    <p class="timeline-desc">Managed the full recruitment lifecycle for IT and non-tech positions. Developed sourcing strategies, conducted market research, and delivered top talent to support company growth across Asia, DACH, and MENA regions.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <span class="timeline-role">Human Resources Intern</span>
-                        <span class="timeline-date">Sep 2020 — Feb 2021</span>
-                    </div>
-                    <p class="timeline-company">NFQ Asia &middot; Da Nang City, Vietnam</p>
-                    <p class="timeline-desc">Gained foundational experience in IT recruitment and HR operations, supporting the talent acquisition team in sourcing and screening candidates.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <span class="timeline-role">Guest Service Agent</span>
-                        <span class="timeline-date">Mar 2019 — Aug 2020</span>
-                    </div>
-                    <p class="timeline-company">Hilton Da Nang &middot; Da Nang City, Vietnam</p>
-                    <p class="timeline-desc">Delivered exceptional guest experiences at an international 5-star property. Built strong communication and interpersonal skills that later proved invaluable in recruitment and candidate engagement.</p>
-                </div>
-
-            </div>
+    <!-- OPEN POSITIONS -->
+    <section id="jobs">
+        <div class="section-inner">
+            <h2 class="section-title">Open <span>Positions</span></h2>
+            <p class="section-subtitle">Current opportunities — let's find your next career move</p>
+            <div class="jobs-grid" id="jobsGrid"></div>
         </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" class="alt-bg">
         <div class="section-inner">
             <h2 class="section-title">Skills &amp; <span>Expertise</span></h2>
             <p class="section-subtitle">Core competencies driving recruitment success</p>
-            <div class="skills-container">
-                <span class="skill-tag featured">Data-Driven Recruitment</span>
-                <span class="skill-tag featured">Process Improvement</span>
-                <span class="skill-tag featured">Market Research</span>
-                <span class="skill-tag">IT Recruitment</span>
-                <span class="skill-tag">Full-Cycle Recruiting</span>
-                <span class="skill-tag">Talent Sourcing</span>
-                <span class="skill-tag">Candidate Engagement</span>
-                <span class="skill-tag">Employer Branding</span>
-                <span class="skill-tag">Stakeholder Management</span>
-                <span class="skill-tag">Onboarding</span>
-                <span class="skill-tag">Recruitment Strategy</span>
-                <span class="skill-tag">Agile Project Management</span>
-                <span class="skill-tag">AI in HR</span>
-            </div>
+            <div class="skills-container" id="skillsContainer"></div>
         </div>
     </section>
 
     <!-- CERTIFICATIONS -->
-    <section id="certifications" class="alt-bg">
+    <section id="certifications">
         <div class="section-inner">
             <h2 class="section-title"><span>Certifications</span></h2>
             <p class="section-subtitle">Continuous learning and professional development</p>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Google Project Management</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Google AI Essentials</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Accelerate Your Job Search with AI</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Capstone: Applying Project Management in the Real World</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Project Execution: Running the Project</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Project Planning: Putting It All Together</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Project Initiation: Starting a Successful Project</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Foundations of Project Management</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">G</div>
-                    <p class="cert-name">Agile Project Management</p>
-                    <p class="cert-issuer">Google</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">FA</div>
-                    <p class="cert-name">Generative AI for HR Professionals</p>
-                    <p class="cert-issuer">Fractal Analytics</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">C</div>
-                    <p class="cert-name">Introduction to Generative AI in Human Resources</p>
-                    <p class="cert-issuer">Coursera Instructor Network</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">KS</div>
-                    <p class="cert-name">AI for Professional Communication</p>
-                    <p class="cert-issuer">Kennesaw State University</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">DL</div>
-                    <p class="cert-name">Generative AI for Everyone</p>
-                    <p class="cert-issuer">DeepLearning.AI</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">MS</div>
-                    <p class="cert-name">Voice of Change: Communicate with Teams for GenAI Adoption</p>
-                    <p class="cert-issuer">Microsoft</p>
-                </div>
-            </div>
+            <div class="cert-grid" id="certGrid"></div>
         </div>
     </section>
 
     <!-- EDUCATION & LANGUAGES -->
-    <section id="education">
+    <section id="education" class="alt-bg">
         <div class="section-inner">
             <h2 class="section-title">Education &amp; <span>Languages</span></h2>
             <p class="section-subtitle">Academic background and language proficiency</p>
             <div class="edu-lang-grid">
-                <div>
-                    <div class="edu-card">
-                        <h3>Da Nang University of Economic</h3>
-                        <p class="degree">Bachelor's Degree — Hospitality Management</p>
-                        <p class="year">2015 — 2019</p>
-                    </div>
-                </div>
-                <div class="lang-list">
-                    <div class="lang-item">
-                        <p class="lang-name">English</p>
-                        <div class="lang-bar">
-                            <div class="lang-bar-fill" style="width: 80%;"></div>
-                        </div>
-                        <p class="lang-level">Professional Working Proficiency</p>
-                    </div>
-                    <div class="lang-item">
-                        <p class="lang-name">Vietnamese</p>
-                        <div class="lang-bar">
-                            <div class="lang-bar-fill" style="width: 100%;"></div>
-                        </div>
-                        <p class="lang-level">Native</p>
-                    </div>
-                    <div class="lang-item">
-                        <p class="lang-name">Chinese</p>
-                        <div class="lang-bar">
-                            <div class="lang-bar-fill" style="width: 30%;"></div>
-                        </div>
-                        <p class="lang-level">Elementary Proficiency</p>
-                    </div>
-                </div>
+                <div id="eduContainer"></div>
+                <div class="lang-list" id="langContainer"></div>
             </div>
         </div>
     </section>
@@ -858,24 +606,7 @@
             <h2 class="section-title">Let's <span>Connect</span></h2>
             <p class="section-subtitle" style="color: var(--gray-400);">Open to conversations about talent, recruitment, and building great teams</p>
             <p class="contact-text">Whether you're looking for exceptional IT professionals or exploring talent acquisition strategies, I'd love to hear from you.</p>
-            <div class="contact-links">
-                <a href="mailto:gam.ho@gradion.com" class="contact-link">
-                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    gam.ho@gradion.com
-                </a>
-                <a href="https://www.linkedin.com/in/gamho/" target="_blank" rel="noopener" class="contact-link">
-                    <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    LinkedIn
-                </a>
-                <a href="https://www.facebook.com/gamho97" target="_blank" rel="noopener" class="contact-link">
-                    <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
-                    Facebook
-                </a>
-                <a href="tel:+84383791675" class="contact-link">
-                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    +84 383 791 675
-                </a>
-            </div>
+            <div class="contact-links" id="contactLinks"></div>
         </div>
     </section>
 
@@ -883,6 +614,137 @@
     <footer>
         <p>&copy; 2026 Gam Ho. All rights reserved.</p>
     </footer>
+
+    <script>
+        fetch('data.json')
+            .then(r => r.json())
+            .then(data => render(data));
+
+        function render(d) {
+            const p = d.profile;
+
+            // Hero
+            document.getElementById('heroAvatar').src = p.avatar;
+            document.getElementById('heroAvatar').alt = p.name;
+            document.getElementById('heroName').innerHTML = `${p.firstName} <span>${p.lastName}</span>`;
+            document.getElementById('heroTagline').textContent = p.tagline;
+            document.getElementById('heroLocation').textContent = p.location;
+            document.getElementById('heroLinks').innerHTML = `
+                <a href="mailto:${p.email}" class="btn btn-primary">Get in Touch</a>
+                <a href="${p.linkedin}" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn Profile</a>
+            `;
+
+            // About
+            document.getElementById('aboutText').innerHTML = d.about.paragraphs.map(t => `<p>${t}</p>`).join('');
+            document.getElementById('aboutHighlights').innerHTML = d.about.highlights.map(h => `
+                <div class="highlight-card">
+                    <span class="number">${h.number}</span>
+                    <span class="label">${h.label}</span>
+                </div>
+            `).join('');
+
+            // Experience
+            document.getElementById('timeline').innerHTML = d.experience.map(e => `
+                <div class="timeline-item${e.current ? ' current' : ''}">
+                    <div class="timeline-header">
+                        <span class="timeline-role">${e.role}</span>
+                        <span class="timeline-date">${e.date}</span>
+                    </div>
+                    <p class="timeline-company">${e.companyUrl
+                        ? `<a href="${e.companyUrl}" target="_blank" rel="noopener" class="inline-link">${e.company}</a>`
+                        : e.company
+                    } &middot; ${e.location}</p>
+                    <p class="timeline-desc">${e.description}</p>
+                </div>
+            `).join('');
+
+            // Open Positions
+            const jobs = d.openPositions || [];
+            if (jobs.length > 0) {
+                document.getElementById('jobsGrid').innerHTML = jobs.map(j => `
+                    <div class="job-card">
+                        <div class="job-card-header">
+                            <div>
+                                <p class="job-title">${j.title}</p>
+                                <p class="job-meta">${j.company} &middot; ${j.location}</p>
+                            </div>
+                            <span class="job-type">${j.type}</span>
+                        </div>
+                        <div class="job-tags">
+                            ${j.tags.map(t => `<span class="job-tag">${t}</span>`).join('')}
+                        </div>
+                        <a href="${j.url}" target="_blank" rel="noopener" class="job-apply">
+                            Apply Now
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                `).join('');
+            } else {
+                document.getElementById('jobsGrid').innerHTML = `
+                    <div class="no-jobs">
+                        <p>No open positions at the moment.</p>
+                        <p class="subtle">Connect with me on LinkedIn to stay updated on future opportunities.</p>
+                    </div>
+                `;
+            }
+
+            // Skills
+            const allSkills = [
+                ...d.skills.featured.map(s => `<span class="skill-tag featured">${s}</span>`),
+                ...d.skills.other.map(s => `<span class="skill-tag">${s}</span>`)
+            ];
+            document.getElementById('skillsContainer').innerHTML = allSkills.join('');
+
+            // Certifications
+            document.getElementById('certGrid').innerHTML = d.certifications.map(c => `
+                <div class="cert-card">
+                    <div class="cert-icon">${c.icon}</div>
+                    <p class="cert-name">${c.name}</p>
+                    <p class="cert-issuer">${c.issuer}</p>
+                </div>
+            `).join('');
+
+            // Education
+            document.getElementById('eduContainer').innerHTML = d.education.map(e => `
+                <div class="edu-card">
+                    <h3>${e.school}</h3>
+                    <p class="degree">${e.degree}</p>
+                    <p class="year">${e.year}</p>
+                </div>
+            `).join('');
+
+            // Languages
+            document.getElementById('langContainer').innerHTML = d.languages.map(l => `
+                <div class="lang-item">
+                    <p class="lang-name">${l.name}</p>
+                    <div class="lang-bar">
+                        <div class="lang-bar-fill" style="width: ${l.percent}%;"></div>
+                    </div>
+                    <p class="lang-level">${l.level}</p>
+                </div>
+            `).join('');
+
+            // Contact
+            document.getElementById('contactLinks').innerHTML = `
+                <a href="mailto:${p.email}" class="contact-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    ${p.email}
+                </a>
+                <a href="${p.linkedin}" target="_blank" rel="noopener" class="contact-link">
+                    <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="${p.facebook}" target="_blank" rel="noopener" class="contact-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
+                    Facebook
+                </a>
+                <a href="tel:${p.phone.replace(/\s/g, '')}" class="contact-link">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    ${p.phone}
+                </a>
+            `;
+        }
+    </script>
 
 </body>
 </html>
