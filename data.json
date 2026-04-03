@@ -107,9 +107,9 @@
     {
       "title": "Senior Fullstack Developer",
       "company": "Gradion",
-      "location": "HCM, Da Nang, Hanoi, Bangkok",
+      "locations": ["Ho Chi Minh City", "Da Nang", "Hanoi", "Bangkok"],
       "type": "Full-time",
-      "setup": "Hybrid / Remote",
+      "setup": "Hybrid/Remote",
       "url": "https://www.linkedin.com/jobs/view/4377574299/",
       "tags": ["Fullstack", "Senior", "Hybrid/Remote"]
     }
